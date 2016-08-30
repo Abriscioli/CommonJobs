@@ -112,6 +112,20 @@ namespace CommonJobs.Mvc.UI.Areas.Evaluations
         }
 
         [AcceptVerbs(HttpVerbs.Get)]
+        [CommonJobsAuthorize(Roles = "EmployeeManagers")]
+        public ActionResult AnalyticDashboard(string period)
+        {
+            ScriptManager.RegisterGlobalJavascript(
+            "ViewData",
+                new
+                {
+                    period = period
+                },
+                500);
+            return View();
+        }
+
+        [AcceptVerbs(HttpVerbs.Get)]
         [Documentation("docs/manual-de-usuario/evaluaciones#Herramienta_para_Responsables_y_Calificadores")]
         public ActionResult PeriodEvaluation(string period)
         {

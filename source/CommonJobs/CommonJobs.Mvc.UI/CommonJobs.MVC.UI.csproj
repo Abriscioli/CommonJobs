@@ -130,6 +130,7 @@
   <ItemGroup>
     <TypeScriptCompile Include="CJLogic\CalculateVacations.ts" />
     <None Include="Areas\Evaluations\Views\Evaluations\HistoryDashboard.cshtml" />
+    <Content Include="Areas\Evaluations\Views\Evaluations\AnalyticDashboard.cshtml" />
     <Content Include="CJLogic\CalculateVacations.js">
       <DependentUpon>CalculateVacations.ts</DependentUpon>
     </Content>
@@ -215,6 +216,7 @@
     <Compile Include="Areas\Evaluations\Controllers\EvaluationsApiController.cs" />
     <Compile Include="Areas\Evaluations\Controllers\EvaluationsController.cs" />
     <Compile Include="Areas\Evaluations\EvaluationsAreaRegistration.cs" />
+    <Compile Include="Areas\Evaluations\Models\AnalyticDashboard.cs" />
     <Compile Include="Areas\Evaluations\Models\Calification.cs" />
     <Compile Include="Areas\Evaluations\Models\HistoryDashboard.cs" />
     <Compile Include="Areas\Evaluations\Models\ReportDashboard.cs" />
@@ -282,6 +284,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\DataTables\dataTables.bootstrap.js" />
     <Content Include="Scripts\Evaluations\auto-expandable-value.js" />
+    <Content Include="Scripts\Evaluations\dashboard-analytic.js" />
     <Content Include="Scripts\Evaluations\tri-state.js" />
     <Content Include="Scripts\Evaluations\markdown-markdownHtml.js" />
     <Content Include="Scripts\jquery-scrolltofixed-min.js" />

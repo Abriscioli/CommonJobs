@@ -1,0 +1,29 @@
+﻿@model CommonJobs.Mvc.UI.Areas.Evaluations.Models.AnalyticDashboard
+@{
+    ViewBag.Title = "Dashboard Historial de evaluaciones de Model.userName";
+    Layout = "~/Areas/Evaluations/Views/Shared/_Layout.cshtml";
+    ScriptManager.RegisterCss(Url.Content("~/Content/twitter-bootstrap/less/bootstrap.less"), priority: 900);
+    ScriptManager.RegisterCss(Url.Content("~/Content/twitter-bootstrap/less/responsive.less"), priority: 900);
+    ScriptManager.RegisterCss(Url.Content("~/Content/Evaluations/evaluations.css"));
+    ScriptManager.RegisterJs(Url.Content("~/Scripts/jquery-1.7.2.min.js"), priority: 900);
+    ScriptManager.RegisterJs(Url.Content("~/Scripts/underscore.js"), priority: 900);
+    ScriptManager.RegisterJs(Url.Content("~/Content/twitter-bootstrap/js/bootstrap-typeahead.js"), priority: 900);
+    ScriptManager.RegisterJs(Url.Content("~/Content/twitter-bootstrap/js/bootstrap-modal.js"), priority: 900);
+    ScriptManager.RegisterJs(Url.Content("~/Scripts/url-generator.js"), priority: 900);
+    ScriptManager.RegisterJs(Url.Content("~/Scripts/knockout-2.2.0.js"), priority: 900);
+    ScriptManager.RegisterJs(Url.Content("~/Scripts/Evaluations/common.js"));
+    ScriptManager.RegisterJs(Url.Content("~/Scripts/Evaluations/dashboard-analytic.js"));
+}
+
+<div class="content-evaluation dashboard">
+    <ul>
+        <li><span class="item">Total de evaluaciones del período: </span><span data-bind="text: totalEvaluations"></span></li>
+        <li><span class="item">Porcentaje de evaluaciones En curso: </span><span data-bind="text: evaluationsInProcess"></span></li>
+        <li><span class="item">Porcentaje de evaluaciones Esperando eval Empleado: </span><span data-bind="text: evaluationsWaitinEmployee"></span></li>
+        <li><span class="item">Porcentaje de evaluaciones Esperando eval Responsable: </span><span data-bind="text: evaluationsWaitingResponsible"></span></li>
+        <li><span class="item">Porcentaje de evaluaciones Esperando eval Empresa: </span><span data-bind="text: evaluationsWaitingCompany"></span></li>
+        <li><span class="item">Porcentaje de evaluaciones Lista para devolución: </span><span data-bind="text: evaluationsReadyForDevolution"></span></li>
+        <li><span class="item">Porcentaje de evaluaciones Abierta para devolución: </span><span data-bind="text: evaluationsOpenForDevolution"></span></li>
+        <li><span class="item">Porcentaje de evaluaciones Finalizadas: </span><span data-bind="text: evaluationsFinished"></span></li>
+    </ul>
+</div>
