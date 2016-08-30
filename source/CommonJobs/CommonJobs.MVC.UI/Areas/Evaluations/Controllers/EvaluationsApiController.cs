@@ -194,6 +194,14 @@ namespace CommonJobs.Mvc.UI.Areas.Evaluations.Controllers
             return Json(evaluationHistory);
         }
 
+        [AcceptVerbs(HttpVerbs.Get)]
+        [CommonJobsAuthorize(Roles = "EmployeeManagers")]
+        public JsonNetResult GetEvaluationAnalytics (string period)
+        {
+            var evaluationAnalytics = ExecuteCommand(new GetEvaluationAnalyticsCommand(period));
+            return Json(evaluationAnalytics);
+        }
+
         private string getUserPeviousPeriod(string actualPeriod, string userName)
         {
             var periodList = RavenSession

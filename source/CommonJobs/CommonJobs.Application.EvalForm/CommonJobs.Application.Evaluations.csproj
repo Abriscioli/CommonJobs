@@ -68,6 +68,7 @@
     <Compile Include="Commands\DeleteEvaluationSharedLink.cs" />
     <Compile Include="Commands\GetEmployeeEvaluationHistoryCommand.cs" />
     <Compile Include="Commands\GetEvaluatedEmployees.cs" />
+    <Compile Include="Commands\GetEvaluationAnalyticsCommand.cs" />
     <Compile Include="Commands\GetEvaluationCalifications.cs" />
     <Compile Include="Commands\GetLoggedUserRoles.cs" />
     <Compile Include="Commands\StartDevolutionCommand.cs" />
@@ -78,6 +79,7 @@
     <Compile Include="Dtos\CalificationsDto.cs" />
     <Compile Include="Dtos\CalificationsEvaluationDto.cs" />
     <Compile Include="Dtos\EmployeeEvaluationDto.cs" />
+    <Compile Include="Dtos\EvaluationAnalitycDto.cs" />
     <Compile Include="Dtos\EvaluatorsUpdateDto.cs" />
     <Compile Include="Dtos\HistoricalEvaluationDto.cs" />
     <Compile Include="Dtos\UpdateCalificationDto.cs" />
@@ -93,6 +95,7 @@
     <Compile Include="Commands\GenerateEvaluationsCommand.cs" />
     <Compile Include="Commands\GetEmployeesForEvaluationCommand.cs" />
     <Compile Include="Commands\GetEvaluationTemplateCommand.cs" />
+    <Compile Include="Indexes\EvaluationAnalytics_Search.cs" />
     <Compile Include="Indexes\EvaluationToDelete_Search.cs" />
     <Compile Include="Extensions\DatabaseCommandsExtensions.cs" />
     <Compile Include="Indexes\Period_Serch.cs" />
